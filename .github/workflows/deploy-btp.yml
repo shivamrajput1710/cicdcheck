@@ -36,7 +36,7 @@ on:
         description: path to dir with mtar
         type: string
         required: false
-        default: mtar
+        default: gen
       mtar-file:
         description: file name of mtar
         type: string
