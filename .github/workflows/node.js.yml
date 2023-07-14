@@ -41,7 +41,7 @@ jobs:
       run: |
         npm ci
         npm run test:node -- --ci
-        chmod 777 .github/actions/cf-deploy/entrypoint.sh
+        chmod 777 $PWD/.github/actions/cf-deploy/entrypoint.sh
 
   deployment:
     name: Deploy
