@@ -85,7 +85,7 @@ jobs:
         key: ${{ runner.os }}-${{ github.head_ref || github.ref_name }}-${{ hashFiles('_i18n/**','app/**','db/**','srv/**','*.json','**/mta.yaml','pom.xml') }}
 
     - name: MTA build
-      if: steps.cache.outputs.cache-hit != 'true'
+      # if: steps.cache.outputs.cache-hit != 'true'
       run: npx mbt build -s ${{ inputs.mta-source-dir }} -t ${{ inputs.mtar-dir }} --mtar ${{ inputs.mtar-file }}
 
     - name: CF Deploy
