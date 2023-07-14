@@ -5,4 +5,4 @@ FROM ppiper/cf-cli:v11
 ENV CF_HOME=$HOME
 # RUN chmod +x /home/runner/work/cicdcheck/cicdcheck/.github/actions/cf-deploy
 # COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT entrypoint.sh
+ENTRYPOINT .github/actions/cf-deploy/entrypoint.sh
