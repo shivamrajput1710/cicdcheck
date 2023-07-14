@@ -8,9 +8,9 @@ INPUT_USERNAME=${INPUT_USERNAME:-$CF_USERNAME}
 INPUT_PASSWORD=${INPUT_PASSWORD:-$CF_PASSWORD}
 cf auth
 
-if [ "x${INPUT_CREATESPACE}" = "xtrue" ]; then
-  cf create-space ${INPUT_SPACE:-$CF_SPACE} -o ${INPUT_ORG:-$CF_ORG}
-fi
+# if [ "x${INPUT_CREATESPACE}" = "xtrue" ]; then
+#   cf create-space ${INPUT_SPACE:-$CF_SPACE} -o ${INPUT_ORG:-$CF_ORG}
+# fi
 
 cf target -o ${INPUT_ORG:-$CF_ORG} -s ${INPUT_SPACE:-$CF_SPACE}
 

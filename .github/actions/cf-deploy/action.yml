@@ -19,6 +19,7 @@ inputs:
   space:
     description: Cloud Foundry space to deploy to.  Default is $CF_SPACE
     required: false
+    default: dev
   createspace:
     description: Whether to create the given space
     required: false

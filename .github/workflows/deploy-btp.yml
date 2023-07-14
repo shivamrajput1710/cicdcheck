@@ -92,14 +92,14 @@ jobs:
       id: deploy
       uses: ./.github/actions/cf-deploy
       with:
-        createspace: true
+        createspace: false
         mtafile: ${{ inputs.mtar-dir }}/${{ inputs.mtar-file }}
         findurl_command: 'cf html5-list -di sflight-destination-service -u'
 
-    - name: Assign Roles
-      uses: ./.github/actions/btp
-      with:
-        cli_url: ${{ inputs.btp-cli-url }}
-        subdomain: ${{ inputs.btp-subdomain }}
-        subaccount_id: ${{ inputs.btp-subaccount-id }}
-        role_collection: ${{ inputs.role-collection }}
+    # - name: Assign Roles
+    #   uses: ./.github/actions/btp
+    #   with:
+    #     cli_url: ${{ inputs.btp-cli-url }}
+    #     subdomain: ${{ inputs.btp-subdomain }}
+    #     subaccount_id: ${{ inputs.btp-subaccount-id }}
+    #     role_collection: ${{ inputs.role-collection }}
