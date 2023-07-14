@@ -25,6 +25,8 @@
     "qunit": "^2.9.3"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "lint": "npx eslint .",
+    "test": "jest"
   }
 }
