@@ -52,8 +52,8 @@ jobs:
       cf-space: dev
       role-collection: sflight-admin-staging-${{ github.head_ref || github.ref_name }}  # must match to mta.yaml
     secrets:
-      username: shivamrajput1710@gmail.com
-      password: Shivam@123
+      username: ""
+      password: ""
       # grant-users: ${{ secrets.GRANT_USERS }}
 
   # e2etest:
