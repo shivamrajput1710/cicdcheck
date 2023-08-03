@@ -8,7 +8,7 @@ on:
       btp-subaccount-id:
         type: string
         required: false
-        default: 26fec421-2086-498c-945e-5ff420f1b1df
+        default: 1f9f7f03-7936-413c-934f-18a4d67c59f6
       btp-cli-url:
         type: string
         required: false
@@ -20,7 +20,7 @@ on:
       cf-org:
         type: string
         required: false
-        default: 641b2c9atrial
+        default: cdb6c3c2trial
       cf-space:
         type: string
         required: true
@@ -41,7 +41,7 @@ on:
         description: file name of mtar
         type: string
         required: false
-        default: ztest.mtar
+        default: cicdcheck.mtar
     secrets:
       username:
         required: true
